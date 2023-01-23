@@ -4,6 +4,11 @@ export default function Document() {
 	return (
 		<Html>
 			<Head>
+				<link
+					rel="shortcut icon"
+					type="image/x-icon"
+					href="/favicon/favicon.ico"
+				/>
 				<meta property="og:title" content="AI Avatar Generator" key="title" />
 				<meta
 					property="og:description"
