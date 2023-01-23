@@ -101,7 +101,9 @@ const Home = () => {
 			}
 
 			console.log(`Trying again in ${retry} seconds.`);
-			setStatus(`Model is loading. Trying again in ${retry} seconds.`);
+			setStatus(
+				`Please wait, the model is loading. Trying again in ${retry} seconds.`
+			);
 
 			await sleep(retry * 1000);
 
