@@ -1,7 +1,3 @@
-/* @import url("https://allfont.net/allfont.css?fonts=star-jedi"); */
-/* @import url("https://allfont.net/allfont.css?fonts=playfair-display");
-@import url("https://allfont.net/allfont.css?fonts=pricedown"); */
-
 body {
 	margin: 0;
 	padding: 0;
@@ -19,6 +15,7 @@ body {
 	overflow: auto;
 	padding: 0px;
 	position: relative;
+	padding: 0 30px;
 }
 
 .container {
@@ -26,13 +23,11 @@ body {
 	flex: 0 0 auto;
 	flex-flow: row nowrap;
 	gap: 10px;
-	/* height: fit-content; */
 	height: 100%;
 	overflow: auto;
 	position: relative;
 	width: auto;
 	gap: 64px;
-	padding: 40px;
 }
 
 .header {
@@ -99,8 +94,7 @@ body {
 	overflow: hidden;
 	padding: 20px;
 	position: relative;
-	width: 100%;
-	/* max-width: 1200px; */
+	width: calc(100% - 40px);
 	will-change: transform;
 	overflow: auto;
 	outline: none;
@@ -113,6 +107,7 @@ body {
 	color: rgba(255, 255, 255, 0.75);
 	text-decoration: none;
 	text-transform: none;
+	box-sizing: border-box;
 }
 
 .prompt-box input {
@@ -136,7 +131,6 @@ body {
 	padding: 0px;
 	position: relative;
 	width: 100%;
-	margin-left: 40px;
 }
 
 .generate-button {
@@ -276,7 +270,7 @@ body {
 	justify-content: space-between;
 	width: 100%;
 	column-gap: 20px;
-	max-width: 800px;
+	max-width: 760px;
 }
 
 .style-button {
@@ -325,13 +319,30 @@ body {
 	margin-bottom: 30px;
 }
 
+.warning {
+	border: 1px solid #ffd21e75;
+	border-radius: 5px;
+	padding: 10px;
+	color: #ffffffde;
+	margin-top: 40px;
+}
+
+.warning p {
+	margin: 0;
+}
+
+.huggingtext {
+	color: #ffd21e;
+}
+
 @media (max-width: 1200px) {
 	.container {
 		flex-direction: column;
 		justify-content: center;
 		max-width: 700px;
 		width: 100%;
-		padding: 50px;
+		height: auto;
+		overflow: hidden;
 	}
 
 	.prompt-container {
@@ -355,6 +366,7 @@ body {
 
 	.output-content img {
 		width: 100%;
+		height: auto;
 	}
 
 	.header-title h1 {
@@ -376,6 +388,12 @@ body {
 
 	.prompt-box {
 		width: 100%;
+	}
+}
+
+@media (max-width: 769px) {
+	.root {
+		padding: 0 10px;
 	}
 }
 

@@ -211,6 +211,14 @@ const Home = () => {
 								</div>
 							</a>
 						</div>
+						<div className="warning">
+							⚠️ This model runs on a free{" "}
+							<a href="https://huggingface.co" className="huggingtext">
+								Hugging Face
+							</a>{" "}
+							instance.
+							<p>Initial loading might take up to 5 minutes.</p>
+						</div>
 					</div>
 				</div>
 				{img && (

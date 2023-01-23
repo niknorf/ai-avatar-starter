@@ -9,7 +9,7 @@ const manrope = Manrope({
 function MyApp({ Component, pageProps }) {
 	return (
 		<main className={manrope.className}>
-			<Component {...pageProps} />;
+			<Component {...pageProps} />
 		</main>
 	);
 }
